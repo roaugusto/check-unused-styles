@@ -18,12 +18,8 @@ This extension checks for unused styles in your TypeScript React files and offer
 
 ## Known Issues
 
-Please report any issues you find on the [GitHub repository for this extension](<Your GitHub Repository URL>).
-
-## Contributing
-
-We welcome contributions! Please see the [Contribution Guide](<Your Contribution Guide URL>) for more details.
+Please report any issues you find on the [GitHub repository for this extension](https://github.com/roaugusto/check-unused-styles).
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](<Your LICENSE file URL>) file for details.
+This project is licensed under the MIT License.
