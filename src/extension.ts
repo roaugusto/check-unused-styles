@@ -51,6 +51,10 @@ export function analyzeTsxFile(filePath: string, styles: Set<string>) {
 }
 
 export async function deleteUnusedStyles(filePath: string, unusedStyles: Set<string>) {
+	if (unusedStyles.size === 0) {
+			return;
+	}
+
 	const unusedStylesList = Array.from(unusedStyles).join(', ');
 
 	const confirmation = await vscode.window.showWarningMessage(
@@ -71,6 +75,7 @@ export async function deleteUnusedStyles(filePath: string, unusedStyles: Set<str
 			fs.writeFileSync(filePath, content);
 	}
 }
+
 
 export function showUnusedStyles(unusedStyles: Set<string>) {
 	if (unusedStyles.size > 0) {
